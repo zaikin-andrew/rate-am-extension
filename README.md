@@ -2,6 +2,8 @@
 
 Fast way to get USD2RUB rates from rate.am
 
+<img width="139" alt="image" src="https://user-images.githubusercontent.com/7475399/195389349-44271d32-9083-4a7f-aa04-af0a1f5ad29e.png">
+
 ## Instruction for build production version
 
 #### Requirements: node - v14.17.0, npm - 6.14.13
