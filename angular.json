@@ -18,11 +18,8 @@
 			"prefix": "app",
 			"architect": {
 				"build": {
-					"builder": "@angular-builders/custom-webpack:browser",
+					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"customWebpackConfig": {
-							"path": "./custom-webpack.config.ts"
-						},
 						"outputPath": "dist/flo-extension",
 						"index": "src/index.html",
 						"main": "src/main.ts",
@@ -67,10 +64,7 @@
 							"vendorChunk": true,
 							"extractLicenses": false,
 							"sourceMap": true,
-							"namedChunks": true,
-							"customWebpackConfig": {
-								"path": "./custom-webpack-dev.config.ts"
-							}
+							"namedChunks": true
 						}
 					},
 					"defaultConfiguration": "production"

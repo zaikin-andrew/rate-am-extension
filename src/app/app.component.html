@@ -1,22 +1,3 @@
 <div class="body">
-
-  <div class="header">
-    <div class="header-name" *ngIf="header === 'Settings'; else logo">{{header}}</div>
-
-    <ng-template #logo>
-      <div class="header-logo">
-        <span class="header-logo__actual">ACTUAL</span><span class="header-logo__articles">ARTICLES</span>
-      </div>
-    </ng-template>
-
-    <div [routerLink]="link" class="settings-icon">
-      <img src="../../assets/icons/settings-icon.svg" alt="Settings">
-    </div>
-  </div>
-
-  <router-outlet></router-outlet>
-  <div class="footer">
-    Created with <span>♥</span> by <a (click)="openLink('https://flo.team/')">FLO</a> 2021
-  </div>
-
+  hello
 </div>
