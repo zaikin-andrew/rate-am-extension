@@ -1,0 +1,103 @@
+@import "../settings.component";
+
+
+.contact-form {
+  font-weight: 500;
+  width: 100%;
+  line-height: 2rem;
+}
+
+.contact-form-input {
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: 2rem;
+}
+
+.invalid {
+  border: 1px solid red !important;
+}
+
+.setting-title {
+  color: #595959;
+  font-weight: 500;
+  margin: 0 0 0 15px;
+  font-size: 13px;
+  line-height: 19px;
+  @include font-color;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.contact-form-textarea {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  height: 7rem;
+}
+
+.contact-form-textarea textarea {
+  border: 0;
+  color: #595959;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  width: 94.5%;
+  height: 90%;
+  border-radius: 10px;
+  resize: none;
+  padding: 6px 10px;
+}
+
+.contact-form-textarea textarea:invalid {
+  border: 1px solid red;
+}
+
+.contact-form-button {
+  margin: 8px auto 0 auto;
+  text-align: center;
+}
+
+.contact-form-button button {
+  border: 0;
+  color: #000000;
+  background: #f8cf52;
+  font-weight: 500;
+  width: 50%;
+  height: 2rem;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background: #EFB604;
+    transition: 0.5s;
+  }
+}
+
+.contact-form-button button:enabled:hover {
+  background: #469CF0;
+}
+
+.response {
+  text-align: center;
+}
+
+.response-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.response-text {
+  padding-bottom: 1rem;
+}
+
+
+.linkInvalid {
+  pointer-events: none !important;
+}
+
+.link {
+  pointer-events: all;
+
+}

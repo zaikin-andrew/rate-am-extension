@@ -1,0 +1,31 @@
+<div class="contact-form">
+
+
+  <div class="setting-title">
+    If you need new source let us know:
+  </div>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+    <div class="contact-form-textarea">
+    <textarea placeholder="Message:" name="message"
+              formControlName="message"
+              [class.invalid]="contactForm.controls['message'].touched && contactForm.controls['message'].invalid">
+    </textarea>
+    </div>
+
+    <div class="contact-form-button">
+      <button [disabled]="contactForm.invalid" type="submit">
+        Send
+      </button>
+
+    </div>
+
+  </form>
+
+  <div>
+
+  </div>
+
+
+</div>
+

@@ -1,0 +1,26 @@
+@import "../../styles";
+
+.articles {
+  padding: 77px 15px 40px 15px;
+  min-height: 500px;
+}
+
+.articles-empty {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3.3vw;
+  text-align: center;
+  @include font-color
+}
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  svg {
+    width: 70px;
+    height: 70px;
+  }
+}

@@ -1,0 +1,28 @@
+@mixin background-color() {
+  @media (prefers-color-scheme: dark) {
+    background: #272727;
+  }
+  @media (prefers-color-scheme: light) {
+    background: #ECECEC;
+  }
+}
+
+@mixin font-color() {
+  @media (prefers-color-scheme: dark) {
+    color: #FFFFFF;
+  }
+  @media (prefers-color-scheme: light) {
+    color: #000000;
+  }
+}
+
+@mixin fixed-blocks-color() {
+  @media (prefers-color-scheme: dark) {
+    background: #272727;
+    color: #FFFFFF;
+  }
+  @media (prefers-color-scheme: light) {
+    background: #ECECEC;
+    color: #272727;
+  }
+}

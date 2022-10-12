@@ -1,0 +1,30 @@
+@import '../../../styles';
+@import "../settings.component";
+
+.sources {
+  font-style: normal;
+  font-weight: normal;
+  @include font-color
+}
+
+.sources input {
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
+.source-checkbox {
+  -webkit-appearance: none;
+  background-color: #EFF2F5;
+  padding: 9px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.source-checkbox:checked {
+  background: url('../../../assets/icons/selected_source.svg') #EFB604 no-repeat;
+  background-position: center;
+}
+
+
+
+

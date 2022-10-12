@@ -1,0 +1,27 @@
+<div class="sources">
+
+  <div class="setting-title">Choose sources</div>
+
+  <div class="source">
+    <input class="source-checkbox" type="checkbox" [(ngModel)]="subscribes.offbynone"
+           (change)="updateSubscribes('offbynone', subscribes.offbynone)"/> offbynone.io
+  </div>
+
+  <div class="source">
+    <input class="source-checkbox" type="checkbox" [(ngModel)]="subscribes.serverless"
+           (change)="updateSubscribes('serverless', subscribes.serverless)"/> serverless.email
+  </div>
+
+
+  <div class="source">
+    <input class="source-checkbox" type="checkbox" [(ngModel)]="subscribes.typescript"
+           (change)="updateSubscribes('typescript', subscribes.typescript)"/> TS Weekly
+  </div>
+
+  <div class="source">
+    <input class="source-checkbox" type="checkbox" [(ngModel)]="subscribes.node"
+           (change)="updateSubscribes('node', subscribes.node)"/> nodeweekly.com
+  </div>
+
+
+</div>

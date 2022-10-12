@@ -1,0 +1,30 @@
+<div class="articles">
+  <div class="spinner" *ngIf="isLoading">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8z" opacity=".5" fill="#F3CE5D"/>
+      <path d="M20 12h2A10 10 0 0 0 12 2v2a8 8 0 0 1 8 8z" fill="#F3CE5D">
+        <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
+      </path>
+    </svg>
+    <div class="articles-empty">We load the newest articles</div>
+  </div>
+  <div class="articles-empty" *ngIf="!checkAllArticlesIsRead() && !isLoading">
+    Awesome!
+    <br>
+    You have read everything!
+  </div>
+
+
+  <div *ngFor="let siteArticles of sitesArticles">
+
+    <div *ngIf="checkIsShow(siteArticles.site)">
+
+      <div *ngFor="let article of siteArticles.articles;index as i">
+        <app-article [article]="article" [articleIndex]="i" [site]="siteArticles.site"></app-article>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+

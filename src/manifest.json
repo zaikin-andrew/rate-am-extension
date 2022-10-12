@@ -1,0 +1,15 @@
+{
+  "name": "RateAm",
+  "description": "Get Rates from RateAm",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "https://*/",
+    "http://*/"
+  ],
+  "action": {
+    "default_title": "My Bookmarks",
+    "default_icon": "./assets/icons/aa_16.png",
+    "default_popup": "index.html"
+  }
+}
