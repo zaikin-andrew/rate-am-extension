@@ -1,6 +1,6 @@
 # RateAm
 
-Fast way to get USD2RUB rates from rete.am
+Fast way to get USD2RUB rates from rate.am
 
 ## Instruction for build production version
 
