@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { BrowserService } from '../../shared/services/browser.service';
 
 @Component({
@@ -9,11 +9,11 @@ import { BrowserService } from '../../shared/services/browser.service';
 })
 export class SendMessageComponent implements OnInit {
 
-  public contactForm: FormGroup;
+  public contactForm: UntypedFormGroup;
 
   constructor(private browser: BrowserService) {
-    this.contactForm = new FormGroup({
-      message: new FormControl(null, [Validators.required]),
+    this.contactForm = new UntypedFormGroup({
+      message: new UntypedFormControl(null, [Validators.required]),
     });
   }
 
