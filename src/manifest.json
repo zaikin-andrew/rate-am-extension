@@ -3,9 +3,8 @@
   "description": "Get Rates from RateAm",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": [
-    "https://*/",
-    "http://*/"
+  "host_permissions": [
+    "https://rate.am/*"
   ],
   "action": {
     "default_title": "My Bookmarks",
