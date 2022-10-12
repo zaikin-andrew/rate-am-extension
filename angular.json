@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"flo-extension": {
+		"rate-am": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:application": {
@@ -20,7 +20,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"outputPath": "dist/flo-extension",
+						"outputPath": "dist/rate-am",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": "src/polyfills.ts",
@@ -73,10 +73,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "flo-extension:build:production"
+							"browserTarget": "rate-am:build:production"
 						},
 						"development": {
-							"browserTarget": "flo-extension:build:development"
+							"browserTarget": "rate-am:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
@@ -84,7 +84,7 @@
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"browserTarget": "flo-extension:build"
+						"browserTarget": "rate-am:build"
 					}
 				},
 				"test": {
