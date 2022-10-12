@@ -1,6 +1,6 @@
-# ActualArticles
+# RateAm
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+Fast way to get USD2RUB rates from rete.am
 
 ## Instruction for build production version
 
@@ -23,4 +23,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build-prod` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Use
+
+Open Chrome Extensions > Development mode: ON and Load unpacked > open folder `rate-am` from `dist/` directory.
